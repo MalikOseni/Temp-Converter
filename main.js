@@ -2,12 +2,9 @@ const celsiusEl = document.getElementById('celsius');
 const fahrenheitEL=document.getElementById('fahrenheit')
 const kelvinEl=document.getElementById('kelvin')
 
-
-
 const computeTemp = (event) =>
 {
     const currentValue = +event.target.value;
-
     switch (event.target.name) {
         case 'celsius':
             kelvinEl.value = (currentValue + 273.32).toFixed(2);
